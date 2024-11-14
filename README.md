@@ -14,7 +14,7 @@ I will only test the capabilities of Pi-hole adblocker, with a comparison of a w
 
 ### Installation
 
-Pihole installation
+#### Pi-hole installation
 - >apt update
   
 **Comment or delete the repository if there is a repository that fails to update**
@@ -39,13 +39,12 @@ remember the adapter settings that are NAT and host-only adapter
 ip enp0s8 must be static with a dhcp server
 select enp0s8
 
-
-For DNS options select
+#### For DNS options select
 >quad9 (filtered, DNSSEC)
 
+#### Then into the browser
+>type 192.168.100.1/admin
 
-Then into the browser
->type 192.168.100.1/admin 
 (adjust the IP statistics)
 select a domain if you want to block a website
 
