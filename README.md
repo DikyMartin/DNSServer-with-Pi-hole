@@ -14,7 +14,7 @@ I will only test the capabilities of Pi-hole adblocker, with a comparison of a w
 
 ### Installation
 
-#### Pi-hole installation
+**Pi-hole installation**
 - >apt update
   
 **Comment or delete the repository if there is a repository that fails to update**
