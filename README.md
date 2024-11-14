@@ -14,3 +14,45 @@ I will only test the capabilities of Pi-hole adblocker, with a comparison of a w
 
 ### Installation
 
+Pihole installation
+- >apt update
+  
+**Comment or delete the repository if there is a repository that fails to update**
+- >apt upgrade -y
+- >apt clean
+- >curl -sSL https://install.pi-hole.net | bash
+
+**if it fails to down use this**
+
+>curl -sSL https://install.pi-hole.net | sudo
+PIHOLE_SKIP_OS_CHECK=true bash
+
+**Change password**
+
+>pihole -a -p
+
+## During installation
+
+Just keep pressing yes
+if there is a choice of enp0s3 or enp0s8
+remember the adapter settings that are NAT and host-only adapter
+ip enp0s8 must be static with a dhcp server
+select enp0s8
+
+
+For DNS options select
+>quad9 (filtered, DNSSEC)
+
+
+Then into the browser
+>type 192.168.100.1/admin 
+(adjust the IP statistics)
+select a domain if you want to block a website
+
+Next, go to Windows, select the network connection feature
+host-only adapter option that has been selected in Vbox
+
+Next to IPV4 and write the dns according to the static ip enp0s8
+which is 
+>192.168.100.1
+
