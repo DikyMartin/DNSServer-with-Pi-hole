@@ -76,3 +76,5 @@ If installation fails, use:
 
 ---
 
+![License](https://img.shields.io/github/license/DikyMartin/DNSServer-with-Pi-hole)
+![Stars](https://img.shields.io/github/stars/DikyMartin/DNSServer-with-Pi-hole)
