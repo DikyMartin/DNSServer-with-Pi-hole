@@ -1,5 +1,27 @@
 # 🛡️ Pi-hole DNS Server for Network Security
 
+![GitHub license](https://img.shields.io/github/license/DikyMartin/pi-hole-dns-server)
+![GitHub last commit](https://img.shields.io/github/last-commit/DikyMartin/pi-hole-dns-server)
+![GitHub stars](https://img.shields.io/github/stars/DikyMartin/pi-hole-dns-server)
+![GitHub forks](https://img.shields.io/github/forks/DikyMartin/pi-hole-dns-server)
+
+---
+
+## 📑 Table of Contents
+- [Overview](#overview)
+- [Setup & Features](#setup--features)
+- [Tech Stack & Networking](#tech-stack--networking)
+- [Installation](#installation)
+- [Topology](#topology)
+- [Demo](#demo)
+- [Use Cases](#use-cases)
+- [Future Improvements](#future-improvements)
+- [Useful Links](#useful-links)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
 ## 📌 Overview
 This project demonstrates how to set up a **DNS server with Pi-hole** on Debian 11 using VirtualBox.  
 The purpose of this setup is to **increase network security** and **improve privacy** by blocking ads, malware, trackers, and unwanted websites at the DNS level.  
