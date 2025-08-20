@@ -24,9 +24,10 @@ Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so ev
   - Adapter 2: **Host-Only Adapter** (for internal network, static IP `192.168.100.1`)  
 
 **Installation Steps**
-```bash
+bash
 # 1. Update and clean system
-sudo apt update
+
+**sudo apt update**
 sudo apt upgrade -y
 sudo apt clean
 
@@ -38,7 +39,7 @@ curl -sSL https://install.pi-hole.net | sudo PIHOLE_SKIP_OS_CHECK=true bash
 
 # 3. Set Admin Password
 pihole -a -p
-```
+
 ## 🎯 Use Cases
 - **Students** → Learning networking & Linux server administration  
 - **Small Businesses** → Affordable network-wide ad-blocking  
