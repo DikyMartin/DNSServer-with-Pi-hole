@@ -28,7 +28,7 @@ The purpose of this setup is to **increase network security** and **improve priv
 
 Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so every device connected will benefit from DNS filtering automatically.  
 <div align="center">
-  <img width="237" height="348" alt="image" src="https://github.com/user-attachments/assets/315a1906-31bd-46eb-8c54-d2bb5d682d99" />
+    <img width="512" height="512" alt="Vortex-R" src="https://github.com/user-attachments/assets/c69d9f3f-e07a-4561-94ac-ce56515ef400" />
 </div>
 
 ---
