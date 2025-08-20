@@ -8,16 +8,14 @@ Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so ev
 
 ---
 
-## 🚀 Features
+## ⚙️ Setup & Features
 - **Ad & Tracker Blocking** → Block advertisements and tracking domains across all devices.  
 - **DNS Sinkhole Technology** → Prevent connections to malicious or unwanted websites.  
 - **Flexible Deployment** → Works on Raspberry Pi, Debian/Ubuntu servers, Fedora, or CentOS.  
 - **Low Resource Usage** → Can run on small devices or virtual machines with minimal specs.  
 - **Web Admin Dashboard** → Manage blacklists, whitelists, and monitor DNS queries in real time.  
 
----
-
-## 🛠️ Tech Stack
+**Tech Stack & Networking**
 - **Operating System**: Debian 11 (installed via VirtualBox)  
 - **Core Service**: Pi-hole  
 - **Virtualization**: Oracle VirtualBox  
@@ -25,82 +23,40 @@ Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so ev
   - Adapter 1: **NAT** (for internet access, DHCP enabled)  
   - Adapter 2: **Host-Only Adapter** (for internal network, static IP `192.168.100.1`)  
 
----
-
-## 📖 Installation Guide
-
-### 1. Update and clean system
+**Installation Steps**
 ```bash
+# 1. Update and clean system
 sudo apt update
 sudo apt upgrade -y
 sudo apt clean
-2. Install Pi-hole
-bash
-Copy
-Edit
+
+# 2. Install Pi-hole
 curl -sSL https://install.pi-hole.net | bash
-If installation fails, use:
 
-bash
-Copy
-Edit
+# If installation fails, use:
 curl -sSL https://install.pi-hole.net | sudo PIHOLE_SKIP_OS_CHECK=true bash
-3. Set Admin Password
-bash
-Copy
-Edit
+
+# 3. Set Admin Password
 pihole -a -p
-⚙️ Configuration Notes
-Select enp0s8 as the network adapter (Host-Only, static IP).
+```
+## 🎯 Use Cases
+- **Students** → Learning networking & Linux server administration  
+- **Small Businesses** → Affordable network-wide ad-blocking  
+- **Home Users** → Protecting family devices with privacy filtering  
+- **Educators** → Teaching DNS and network security concepts  
 
-Recommended DNS: quad9 (filtered, DNSSEC).
+---
 
-Static IP configuration:
+## 🔮 Future Improvements
+- Integrate Pi-hole with **Unbound** for recursive DNS  
+- Enable **DNS-over-HTTPS (DoH)** for encrypted DNS queries  
+- Deploy on **Raspberry Pi** for 24/7 filtering  
+- Automate deployment with **Ansible or Docker**  
 
-192.168.100.1 with range 10 - 50.
+---
 
-🌐 Accessing the Admin Panel
-After installation, open a browser and go to:
+## 📎 References
+- [Pi-hole Official Website](https://pi-hole.net/)  
+- [Pi-hole GitHub Repository](https://github.com/pi-hole/pi-hole)  
+- [Debian Documentation](https://www.debian.org/doc/)  
 
-arduino
-Copy
-Edit
-http://192.168.100.1/admin
-🎯 Use Cases
-Students learning networking & Linux server administration.
-
-Small businesses seeking affordable network ad-blocking.
-
-Home users who want family-wide privacy protection.
-
-Educators teaching DNS and network security.
-
-🔮 Future Improvements
-Integrate Pi-hole with Unbound for recursive DNS.
-
-Enable DNS-over-HTTPS (DoH) for encrypted DNS queries.
-
-Deploy on Raspberry Pi for 24/7 filtering.
-
-Automate deployment with Ansible or Docker.
-
-📎 References
-Pi-hole Official Website
-
-Pi-hole GitHub Repository
-
-Debian Documentation
-
-👨‍💻 Author
-Created by Diky Martin
-💡 Contributions and feedback are welcome!
-
-📂 Repository Structure
-php
-Copy
-Edit
-.
-├── README.md                       # Documentation
-├── installationdebian11tutorial.pdf # (Optional) Debian installation notes
-├── diskmanagement.pdf               # (Optional) Guide for partition setup in VM
-├── new.txt                          # Notes / scratchpad
