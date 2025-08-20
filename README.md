@@ -30,5 +30,7 @@ Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so ev
 ### 1. Update and clean system
 bash
 > sudo apt update
+
 > sudo apt upgrade -y
+
 > sudo apt clean
