@@ -1,4 +1,4 @@
-# 🛡️ Building a Pi-hole DNS Server for Network Security
+# 🛡️ Pi-hole DNS Server for Network Security
 
 ## 📌 Overview
 This project demonstrates how to set up a **DNS server with Pi-hole** on Debian 11 using VirtualBox.  
