@@ -56,6 +56,17 @@ If installation fails, use:
 
 ---
 
+## 🗺️ Topology
+
+mermaid
+graph TD
+  Clients[Clients (PC, Laptop, Phone)] -->|DNS Query| PiHole[Pi-hole Server\n192.168.100.1]
+  PiHole -->|Forward Query| Router[Router / NAT]
+  Router --> Internet((Internet))
+
+
+---
+
 ## 🔮 Future Improvements
 
 - Integrate Pi-hole with Unbound for recursive DNS.
