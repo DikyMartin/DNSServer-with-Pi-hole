@@ -5,6 +5,7 @@ This project demonstrates how to set up a **DNS server with Pi-hole** on Debian 
 The purpose of this setup is to **increase network security** and **improve privacy** by blocking ads, malware, trackers, and unwanted websites at the DNS level.  
 
 Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so every device connected will benefit from DNS filtering automatically.  
+<img width="800" height="600" alt="dashboard pihole" src="https://github.com/user-attachments/assets/db42acab-5f80-4b3b-9ac8-5dfda76c25af" />
 
 ---
 
