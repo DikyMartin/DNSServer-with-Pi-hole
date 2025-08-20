@@ -34,33 +34,73 @@ Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so ev
 sudo apt update
 sudo apt upgrade -y
 sudo apt clean
+2. Install Pi-hole
+bash
+Copy
+Edit
+curl -sSL https://install.pi-hole.net | bash
+If installation fails, use:
 
-## ⚙️ Configuration Notes
-- Select `enp0s8` as the network adapter (Host-Only, static IP).
-- Recommended DNS: `quad9 (filtered, DNSSEC)`.
-- Static IP configuration:
-  - `192.168.100.1` with range `10 - 50`.
+bash
+Copy
+Edit
+curl -sSL https://install.pi-hole.net | sudo PIHOLE_SKIP_OS_CHECK=true bash
+3. Set Admin Password
+bash
+Copy
+Edit
+pihole -a -p
+⚙️ Configuration Notes
+Select enp0s8 as the network adapter (Host-Only, static IP).
 
-## 🌐 Accessing the Admin Panel
+Recommended DNS: quad9 (filtered, DNSSEC).
+
+Static IP configuration:
+
+192.168.100.1 with range 10 - 50.
+
+🌐 Accessing the Admin Panel
 After installation, open a browser and go to:
 
-## 🎯 Use Cases
-- Students learning networking & Linux server administration.
-- Small businesses seeking affordable network ad-blocking.
-- Home users who want family-wide privacy protection.
-- Educators teaching DNS and network security.
+arduino
+Copy
+Edit
+http://192.168.100.1/admin
+🎯 Use Cases
+Students learning networking & Linux server administration.
 
-## 🔮 Future Improvements
-- Integrate Pi-hole with Unbound for recursive DNS.
-- Enable DNS-over-HTTPS (DoH) for encrypted DNS queries.
-- Deploy on Raspberry Pi for 24/7 filtering.
-- Automate deployment with Ansible or Docker.
+Small businesses seeking affordable network ad-blocking.
 
-## 📎 References
-- [Pi-hole Official Website](https://pi-hole.net/)
-- [Pi-hole GitHub Repository](https://github.com/pi-hole/pi-hole)
-- [Debian Documentation](https://www.debian.org/doc/)
+Home users who want family-wide privacy protection.
 
-## 👨‍💻 Author
-Created by **Diky Martin**  
+Educators teaching DNS and network security.
+
+🔮 Future Improvements
+Integrate Pi-hole with Unbound for recursive DNS.
+
+Enable DNS-over-HTTPS (DoH) for encrypted DNS queries.
+
+Deploy on Raspberry Pi for 24/7 filtering.
+
+Automate deployment with Ansible or Docker.
+
+📎 References
+Pi-hole Official Website
+
+Pi-hole GitHub Repository
+
+Debian Documentation
+
+👨‍💻 Author
+Created by Diky Martin
 💡 Contributions and feedback are welcome!
+
+📂 Repository Structure
+php
+Copy
+Edit
+.
+├── README.md                       # Documentation
+├── installationdebian11tutorial.pdf # (Optional) Debian installation notes
+├── diskmanagement.pdf               # (Optional) Guide for partition setup in VM
+├── new.txt                          # Notes / scratchpad
