@@ -34,3 +34,13 @@ bash
 > sudo apt upgrade -y
 
 > sudo apt clean
+
+### 2. Install Pi-hole
+> curl -sSL https://install.pi-hole.net | bash
+
+If installation fails, use:
+
+> curl -sSL https://install.pi-hole.net | sudo PIHOLE_SKIP_OS_CHECK=true bash
+
+### 3. Set Admin Password
+> pihole -a -p
