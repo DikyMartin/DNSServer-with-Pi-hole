@@ -47,23 +47,22 @@ If installation fails, use:
 
 ---
 
+## 🗺️ Topology
+
+This setup uses **Debian 11 VM on VirtualBox** with two adapters:
+- **Adapter 1 (NAT):** Internet access (via router 192.168.1.1)
+- **Adapter 2 (Host-Only):** Internal network 192.168.100.0/24  
+  → Pi-hole DNS server: `192.168.100.1`
+<img width="837" height="435" alt="pihole_topology" src="https://github.com/user-attachments/assets/db3535a7-76e2-4199-98b7-fcb6aa0cec4d" />
+
+---
+
 ## 🎯 Use Cases
 
 - Students learning networking & Linux server administration.
 - Small businesses seeking affordable network ad-blocking.
 - Home users who want family-wide privacy protection.
 - Educators teaching DNS and network security.
-
----
-
-## 🗺️ Topology
-
-mermaid
-graph TD
-  Clients[Clients (PC, Laptop, Phone)] -->|DNS Query| PiHole[Pi-hole Server\n192.168.100.1]
-  PiHole -->|Forward Query| Router[Router / NAT]
-  Router --> Internet((Internet))
-
 
 ---
 
