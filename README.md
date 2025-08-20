@@ -87,6 +87,7 @@ This setup uses **Debian 11 VM on VirtualBox** with two adapters:
 
 ---
 
+![GitHub license](https://img.shields.io/github/license/DikyMartin/DNSServer-with-Pi-hole)
 ![GitHub last commit](https://img.shields.io/github/last-commit/DikyMartin/DNSServer-with-Pi-hole)
 ![GitHub stars](https://img.shields.io/github/stars/DikyMartin/DNSServer-with-Pi-hole)
 ![GitHub forks](https://img.shields.io/github/forks/DikyMartin/DNSServer-with-Pi-hole)
