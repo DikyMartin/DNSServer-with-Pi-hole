@@ -38,7 +38,7 @@ Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so ev
 - **Low Resource Usage** → Runs on small devices or virtual machines with minimal specs  
 - **Web Admin Dashboard** → Manage blacklists/whitelists and monitor DNS queries in real time  
 
-### 🔧 Tech Stack & Networking
+## 🔧 Tech Stack & Networking
 - **Operating System**: Debian 11 (installed via VirtualBox)  
 - **Core Service**: Pi-hole  
 - **Virtualization**: Oracle VirtualBox  
