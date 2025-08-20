@@ -28,7 +28,6 @@ Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so ev
 ## 🚀 Installation
 
 ### 1. Update and clean system
-bash
 > sudo apt update
 
 > sudo apt upgrade -y
@@ -44,3 +43,36 @@ If installation fails, use:
 
 ### 3. Set Admin Password
 > pihole -a -p
+
+---
+
+## 🎯 Use Cases
+
+- Students learning networking & Linux server administration.
+- Small businesses seeking affordable network ad-blocking.
+- Home users who want family-wide privacy protection.
+- Educators teaching DNS and network security.
+
+---
+
+## 🔮 Future Improvements
+
+- Integrate Pi-hole with Unbound for recursive DNS.
+- Enable DNS-over-HTTPS (DoH) for encrypted DNS queries.
+- Deploy on Raspberry Pi for 24/7 filtering.
+- Automate deployment with Ansible or Docker.
+
+---
+
+## 🔗 Useful Links
+
+- 🌐 [Pi-hole Official Website](https://pi-hole.net/)  
+- 💻 [Pi-hole GitHub Repository](https://github.com/pi-hole/pi-hole)  
+- 📖 [Debian Official Documentation](https://www.debian.org/doc/)  
+- 🖥️ [Oracle VirtualBox Download](https://www.virtualbox.org/)  
+- 📡 [Unbound DNS Resolver](https://www.nlnetlabs.nl/projects/unbound/about/)  
+- 🔒 [DNS-over-HTTPS (DoH) RFC 8484](https://datatracker.ietf.org/doc/html/rfc8484)  
+- 🐧 [Linux Command Cheat Sheet](https://linuxcommand.org/lc3_learning_the_shell.php)  
+
+---
+
