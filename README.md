@@ -22,12 +22,14 @@
 
 ---
 
-## 📌 Overview
+## 📌 Overview 
 This project demonstrates how to set up a **DNS server with Pi-hole** on Debian 11 using VirtualBox.  
 The purpose of this setup is to **increase network security** and **improve privacy** by blocking ads, malware, trackers, and unwanted websites at the DNS level.  
 
 Unlike browser-based ad blockers, Pi-hole works on the **entire network**, so every device connected will benefit from DNS filtering automatically.  
-<img width="800" height="600" alt="dashboard pihole" src="https://github.com/user-attachments/assets/db42acab-5f80-4b3b-9ac8-5dfda76c25af" />
+<div align="center">
+  <img width="237" height="348" alt="image" src="https://github.com/user-attachments/assets/315a1906-31bd-46eb-8c54-d2bb5d682d99" />
+</div>
 
 ---
 
@@ -76,6 +78,20 @@ This setup uses **Debian 11 VM on VirtualBox** with two adapters:
 - **Adapter 2 (Host-Only):** Internal network 192.168.100.0/24  
   → Pi-hole DNS server: `192.168.100.1`
 <img width="837" height="435" alt="pihole_topology" src="https://github.com/user-attachments/assets/db3535a7-76e2-4199-98b7-fcb6aa0cec4d" />
+
+---
+
+## 🖼️ Demo
+
+Pi-hole Admin Dashboard after successful installation and configuration:
+
+<img width="800" alt="Pi-hole Dashboard" src="https://github.com/user-attachments/assets/db42acab-5f80-4b3b-9ac8-5dfda76c25af" />
+
+*This dashboard shows:*
+- Total DNS queries across the network  
+- Number of ads/trackers blocked  
+- Top domains & clients making requests  
+- System status (CPU, memory, and load)
 
 ---
 
